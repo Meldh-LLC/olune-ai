@@ -1,29 +1,362 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Olune</title>
-<style>
-  :root { color-scheme: light dark; }
-  html, body { height: 100%; margin: 0; }
-  body {
-    display: flex; align-items: center; justify-content: center;
-    font-family: Georgia, 'Times New Roman', serif;
-    background: #faf8f4; color: #1c1a17;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olune | A Private Place to Think</title>
+  <meta name="description" content="Olune is an on-device philosophical counsel app for private conversation, reflection, and a journal of the thoughts worth keeping.">
+  <meta name="theme-color" content="#151a2c">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://olune.ai/">
+  <link rel="icon" href="/assets/brand/olune-app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/olune-app-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Olune">
+  <meta property="og:title" content="Olune | A Private Place to Think">
+  <meta property="og:description" content="Private, on-device philosophical counsel. No account, cloud inference, telemetry, or subscription.">
+  <meta property="og:url" content="https://olune.ai/">
+  <meta property="og:image" content="https://olune.ai/assets/brand/olune-social.png">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="Olune. A private place to think.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Olune | A Private Place to Think">
+  <meta name="twitter:description" content="Private, on-device philosophical counsel.">
+  <meta name="twitter:image" content="https://olune.ai/assets/brand/olune-social.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Olune",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Android, iOS",
+    "description": "An on-device philosophical counsel app for private conversation, reflection, and journaling.",
+    "url": "https://olune.ai/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Meldh LLC",
+      "url": "https://meldh.com/"
+    }
   }
-  @media (prefers-color-scheme: dark) {
-    body { background: #16161a; color: #e8e6e1; }
-  }
-  main { text-align: center; padding: 2rem; }
-  h1 { font-size: 3rem; font-weight: normal; letter-spacing: 0.06em; margin: 0 0 0.75rem; }
-  p { font-size: 1.05rem; opacity: 0.65; margin: 0; }
-</style>
+  </script>
 </head>
 <body>
-<main>
-  <h1>Olune</h1>
-  <p>Coming soon.</p>
-</main>
+  <a class="skip-link" href="#main">Skip to Main Content</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="/" aria-label="Olune home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Olune</span>
+      </a>
+      <div class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#principles">Principles</a>
+        <a href="/support/">Support</a>
+        <a class="nav-status" href="#availability">In Development</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shell">
+        <div>
+          <p class="eyebrow">Private, on-device philosophical counsel</p>
+          <h1 id="hero-title">A private place to think.</h1>
+          <p class="hero-copy">
+            Olune brings philosophy and psychology into a conversation that runs on
+            your device. Examine a problem, test another perspective, and keep the
+            passages worth returning to.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#experience">See How It Works</a>
+            <a class="button" href="/privacy/">Read the Privacy Policy</a>
+          </div>
+          <p class="hero-note">In development for Android and iOS.</p>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustration of the Olune conversation screen">
+          <div class="hero-orbit" aria-hidden="true"></div>
+          <div class="app-preview">
+            <div class="preview-screen">
+              <div class="preview-top">
+                <span class="preview-wordmark">Olune</span>
+                <span class="preview-lock">On Device</span>
+              </div>
+              <p class="preview-intro">A private conversation</p>
+              <p class="preview-question">What is on your mind?</p>
+              <p class="preview-copy">
+                Choose how Olune responds, then write what you are facing.
+              </p>
+              <div class="pill-row" aria-hidden="true">
+                <span class="pill pill--active">Conversational</span>
+                <span class="pill">Perspectives</span>
+                <span class="pill">Socratic</span>
+                <span class="pill">Direct</span>
+                <span class="pill">Reflective</span>
+              </div>
+              <div class="pill-row" style="margin-top: 0.45rem" aria-hidden="true">
+                <span class="pill">Neutral</span>
+                <span class="pill pill--active">Warm</span>
+                <span class="pill">Challenging</span>
+              </div>
+              <div class="preview-input">
+                <span>Write what you are facing...</span>
+                <span class="send-dot" aria-hidden="true">↑</span>
+              </div>
+              <p class="preview-foot">Your words stay on your device.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-band" aria-label="Olune privacy summary">
+      <div class="trust-shell">
+        <div class="trust-item">
+          <span class="trust-label">Inference</span>
+          <span class="trust-value">Runs on your device</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-label">Storage</span>
+          <span class="trust-value">Encrypted locally</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-label">Business Model</span>
+          <span class="trust-value">No subscriptions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">The experience</p>
+          <div>
+            <h2 class="section-title" id="experience-title">Philosophy for the life in front of you.</h2>
+            <p class="section-dek">
+              Olune is a thinking partner for questions without easy answers. Its
+              responses draw from philosophical and psychological traditions while
+              staying with the particulars of your situation.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-index">01</span>
+            <h3>Choose the shape of the conversation</h3>
+            <p>
+              Ask for a natural exchange, several named perspectives, Socratic
+              questions, a direct position, or a slower reflective response. Tone can
+              remain measured, turn warm, or become more challenging.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">02</span>
+            <h3>Invite honest resistance</h3>
+            <p>
+              Challenge Me asks one direct question about something you may be taking
+              for granted. Another Perspective returns to the same concern through a
+              different tradition.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">03</span>
+            <h3>Keep what matters</h3>
+            <p>
+              Save a passage to your private Journal, add your own note, organize it
+              with tags and collections, or begin a new conversation from it later.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">04</span>
+            <h3>Find traditions worth returning to</h3>
+            <p>
+              Explore concise introductions to different schools of thought and use a
+              guided quiz to find the traditions that speak most clearly to your
+              current questions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--midnight" id="privacy" aria-labelledby="privacy-title">
+      <div class="section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">Private by construction</p>
+          <div>
+            <h2 class="section-title" id="privacy-title">Counsel without an audience.</h2>
+            <p class="section-dek">
+              The model, conversation history, and Journal live on your device. Olune
+              has no account system, analytics SDK, advertising, or telemetry.
+            </p>
+          </div>
+        </div>
+
+        <div class="privacy-grid">
+          <article class="privacy-card">
+            <span class="privacy-icon" aria-hidden="true">01</span>
+            <h3>Local inference</h3>
+            <p>
+              After the one-time model download, your conversations are generated on
+              the device in your hands. Prompts are not sent to a cloud model.
+            </p>
+          </article>
+          <article class="privacy-card">
+            <span class="privacy-icon" aria-hidden="true">02</span>
+            <h3>Encrypted storage</h3>
+            <p>
+              Saved conversations, notes, and settings are kept in an encrypted local
+              database protected by a key held in the device operating system.
+            </p>
+          </article>
+          <article class="privacy-card">
+            <span class="privacy-icon" aria-hidden="true">03</span>
+            <h3>Deliberate sharing</h3>
+            <p>
+              Nothing reaches Meldh automatically. Content leaves only when you choose
+              an action such as sharing, reporting, or exporting an encrypted backup.
+            </p>
+          </article>
+        </div>
+
+        <p class="privacy-detail">
+          The model download host and any link or sharing destination you choose can
+          see the ordinary network information involved in that action. Olune never
+          includes your conversation or Journal in the model download. The full
+          details are in the <a href="/privacy/">Privacy Policy</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="section-shell charter">
+        <div class="charter-copy">
+          <p class="eyebrow">The Olune Charter</p>
+          <h2 class="section-title" id="principles-title">A product that leaves room for a life.</h2>
+          <p>
+            Olune is built for considered use. It has no streaks, attention loops, or
+            pressure to return. The core app remains useful without an account,
+            subscription, or continuing content promise.
+          </p>
+        </div>
+        <div class="charter-list">
+          <div class="charter-line">
+            <span>01</span>
+            <span>The Standard model, every response type and tone, conversation, and Journal stay free.</span>
+          </div>
+          <div class="charter-line">
+            <span>02</span>
+            <span>Optional paid features are bought once and owned. There are no subscriptions.</span>
+          </div>
+          <div class="charter-line">
+            <span>03</span>
+            <span>There are no accounts, trackers, analytics, advertisements, or Meldh servers.</span>
+          </div>
+          <div class="charter-line">
+            <span>04</span>
+            <span>What ships is complete. A purchase does not depend on promised future work.</span>
+          </div>
+          <div class="charter-line">
+            <span>05</span>
+            <span>Progress only counts upward. Olune does not punish a quiet week.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--rule" aria-labelledby="faq-title">
+      <div class="section-shell">
+        <div class="section-intro">
+          <p class="eyebrow">Questions</p>
+          <h2 class="section-title" id="faq-title">What to know before Olune arrives.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Is Olune therapy?</summary>
+            <p>
+              No. Olune is a companion for reflection and is not a doctor, therapist,
+              counselor, lawyer, or financial adviser. It is not built for emergencies
+              and cannot replace a qualified professional who knows your circumstances.
+            </p>
+          </details>
+          <details>
+            <summary>Does Olune need an internet connection?</summary>
+            <p>
+              Core conversations and storage work offline after a one-time model
+              download. Opening links, using an app-store purchase, sending a report,
+              or sharing content through another service requires the connection used
+              by that action.
+            </p>
+          </details>
+          <details>
+            <summary>Why is the model download large?</summary>
+            <p>
+              Olune runs a full language model locally so your prompts do not need to
+              travel to a cloud inference service. Exact download sizes and supported
+              device guidance will be published before release.
+            </p>
+          </details>
+          <details>
+            <summary>Can I move my Journal to another device?</summary>
+            <p>
+              Olune can create a password-protected encrypted backup that you choose
+              where to store. Meldh never receives the file or the password.
+            </p>
+          </details>
+          <details>
+            <summary>When will Olune be available?</summary>
+            <p>
+              Olune is in active development for Android and iOS. Release information
+              and verified device requirements will appear here when the app is ready.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="availability" aria-labelledby="availability-title">
+      <div class="section-shell">
+        <div class="closing-copy">
+          <p class="eyebrow">In development</p>
+          <h2 id="availability-title">Some questions deserve more than a quick answer.</h2>
+          <p>
+            Olune is being prepared for Android and iOS. There is no mailing list,
+            tracking pixel, or sign-up form. This page will carry the release when it is
+            ready.
+          </p>
+          <a class="button" href="/support/">Contact and Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>
+        <a class="brand footer-brand" href="/" aria-label="Olune home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Olune</span>
+        </a>
+        <p class="footer-note">
+          Made by <a href="https://meldh.com/">Meldh LLC</a>. Olune is a
+          philosophical reflection tool and does not provide professional advice.
+        </p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/disclaimer/">Disclaimer</a>
+        <a href="/support/">Support</a>
+        <a href="mailto:support@meldh.com">Email</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
