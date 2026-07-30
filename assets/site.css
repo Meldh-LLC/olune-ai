@@ -151,26 +151,14 @@ a {
 }
 
 .brand-mark {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
+  width: 2.15rem;
+  height: 2.15rem;
   flex: 0 0 auto;
-  border: 0.3rem solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-  transform: rotate(-18deg);
+  background: url("brand/olune-mark.svg") center / contain no-repeat;
 }
 
 .brand-mark::after {
-  position: absolute;
-  top: 0.05rem;
-  right: -0.04rem;
-  width: 0.34rem;
-  height: 0.34rem;
-  border-radius: 50%;
-  background: var(--bronze);
-  content: "";
-  transform: rotate(18deg);
+  content: none;
 }
 
 .brand-name {
@@ -184,7 +172,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: clamp(1rem, 2.4vw, 2rem);
+  gap: clamp(1.15rem, 2.8vw, 2.4rem);
   font-family: var(--sans);
   font-size: 0.76rem;
   font-weight: 650;
@@ -200,11 +188,8 @@ a {
   color: var(--bronze);
 }
 
-.nav-status {
-  padding: 0.48rem 0.75rem;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  opacity: 0.92;
+.nav-links a[aria-current="page"] {
+  color: var(--bronze-dark);
 }
 
 .hero {
@@ -212,23 +197,20 @@ a {
   min-height: 52rem;
   overflow: hidden;
   background:
-    radial-gradient(circle at 76% 42%, rgba(83, 102, 143, 0.35), transparent 23rem),
-    linear-gradient(145deg, #111625, var(--midnight) 58%, #1b2237);
+    radial-gradient(circle at 74% 40%, rgba(83, 102, 143, 0.22), transparent 25rem),
+    linear-gradient(145deg, #101522, var(--midnight) 62%, #192036);
   color: var(--moon);
 }
 
 .hero::before {
   position: absolute;
-  top: -25rem;
-  right: -19rem;
-  width: 57rem;
-  height: 57rem;
-  border: 1px solid rgba(245, 239, 226, 0.08);
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 6rem rgba(245, 239, 226, 0.018),
-    0 0 0 12rem rgba(245, 239, 226, 0.012);
+  top: 7rem;
+  right: -7rem;
+  width: 34rem;
+  height: 34rem;
+  background: url("brand/olune-mark.svg") center / contain no-repeat;
   content: "";
+  opacity: 0.055;
 }
 
 .hero-shell {
@@ -310,7 +292,7 @@ a {
 }
 
 .hero-note {
-  margin: 1.15rem 0 0;
+  margin: 1.8rem 0 0;
   color: rgba(245, 239, 226, 0.5);
   font-family: var(--sans);
   font-size: 0.72rem;
@@ -321,30 +303,16 @@ a {
   min-height: 37rem;
 }
 
-.hero-orbit {
+.hero-visual::before {
   position: absolute;
-  top: 0.5rem;
-  right: -2rem;
-  width: 26rem;
-  height: 26rem;
-  border: 1px solid rgba(245, 239, 226, 0.11);
-  border-radius: 50%;
-}
-
-.hero-orbit::before,
-.hero-orbit::after {
-  position: absolute;
-  border: 1px solid rgba(245, 239, 226, 0.08);
-  border-radius: 50%;
+  top: 1rem;
+  left: 50%;
+  width: 28rem;
+  height: 28rem;
+  background: url("brand/olune-mark.svg") center / contain no-repeat;
   content: "";
-}
-
-.hero-orbit::before {
-  inset: 3.1rem;
-}
-
-.hero-orbit::after {
-  inset: 6.3rem;
+  opacity: 0.16;
+  transform: translateX(-50%);
 }
 
 .app-preview {
@@ -360,7 +328,7 @@ a {
   background: var(--paper);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.28);
   color: var(--ink);
-  transform: translateX(-50%) rotate(2deg);
+  transform: translateX(-50%);
 }
 
 .preview-screen {
@@ -535,6 +503,25 @@ a {
   align-items: start;
 }
 
+.section-intro--compact {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  margin: 0;
+  color: var(--bronze-dark);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section--midnight .section-label {
+  color: var(--bronze);
+}
+
 .section-title {
   max-width: 44rem;
   margin: 0;
@@ -558,6 +545,18 @@ a {
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
   grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-grid--three .feature-card {
+  border-top: 0;
+}
+
+.feature-grid--three .feature-card + .feature-card {
+  border-left: 1px solid var(--rule);
 }
 
 .feature-card {
@@ -730,15 +729,13 @@ a {
 
 .closing::after {
   position: absolute;
-  right: -8rem;
-  bottom: -13rem;
-  width: 30rem;
-  height: 30rem;
-  border: 4.5rem solid rgba(83, 102, 143, 0.1);
-  border-right-color: transparent;
-  border-radius: 50%;
+  right: -4rem;
+  bottom: -7rem;
+  width: 25rem;
+  height: 25rem;
+  background: url("brand/olune-mark.svg") center / contain no-repeat;
   content: "";
-  transform: rotate(-20deg);
+  opacity: 0.09;
 }
 
 .closing-copy {
@@ -761,11 +758,19 @@ a {
   font-size: 1.16rem;
 }
 
-.closing-copy .button {
+.text-link {
+  display: inline-block;
   margin-top: 0.8rem;
-  border-color: var(--midnight);
-  background: var(--midnight);
-  color: var(--moon);
+  color: var(--midnight);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: var(--bronze-dark);
 }
 
 .site-footer {
@@ -891,28 +896,38 @@ a {
 }
 
 .support-grid {
-  display: grid;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  grid-template-columns: repeat(2, 1fr);
+}
+
+.support-hero {
+  padding: clamp(3.5rem, 6vw, 5rem) 0 clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.support-body {
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
 }
 
 .support-card {
-  padding: 1.7rem 0;
+  display: grid;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+  grid-template-columns: minmax(10rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
 }
 
 .support-card:nth-child(even) {
-  padding-left: 1.7rem;
-  border-left: 1px solid var(--rule);
+  padding-left: 0;
+  border-left: 0;
 }
 
 .support-card h2 {
-  margin: 0 0 0.6rem;
+  margin: 0;
 }
 
 .support-card p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 @media (max-width: 58rem) {
@@ -933,9 +948,13 @@ a {
     top: 0;
   }
 
-  .hero-orbit {
-    right: 50%;
-    transform: translateX(50%);
+  .feature-grid--three {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid--three .feature-card + .feature-card {
+    border-top: 1px solid var(--rule);
+    border-left: 0;
   }
 
   .section-intro {
@@ -966,7 +985,11 @@ a {
     min-height: 4.4rem;
   }
 
-  .nav-links a:not(.nav-status) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a[href="#experience"] {
     display: none;
   }
 
@@ -997,8 +1020,7 @@ a {
   }
 
   .trust-shell,
-  .feature-grid,
-  .support-grid {
+  .feature-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1021,8 +1043,15 @@ a {
 
   .support-card:nth-child(even) {
     padding-left: 0;
-    border-top: 1px solid var(--rule);
     border-left: 0;
+  }
+
+  .support-card {
+    display: block;
+  }
+
+  .support-card h2 {
+    margin-bottom: 0.55rem;
   }
 
   .footer-shell {

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Olune AB04 — upright O with solid book</title>
+  <desc id="desc">A dark rounded-square icon containing a pale moon, symmetrical upright O, and solid gold open book.</desc>
+  <rect width="64" height="64" rx="14" fill="#0b1729"/>
+  <circle cx="32" cy="25" r="16" fill="#f4f1e8"/>
+  <ellipse cx="32" cy="25" rx="9.25" ry="10" fill="#0b1729"/>
+  <ellipse cx="32" cy="25" rx="5.8" ry="8" fill="#f4f1e8"/>
+  <path d="M10 40Q20 37 30 45V54Q20 50 10 52ZM54 40Q44 37 34 45V54Q44 50 54 52Z" fill="#c9a86a"/>
+</svg>
