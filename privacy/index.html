@@ -36,7 +36,7 @@
           Olune is built so that your private thoughts stay private. This policy
           describes the few times the app or this website touches a network.
         </p>
-        <p class="legal-meta">Effective July 27, 2026</p>
+        <p class="legal-meta">Effective September 8, 2026</p>
       </div>
     </section>
 
@@ -50,26 +50,33 @@
 
       <h2>What Olune Collects</h2>
       <p>
-        Olune has no accounts, analytics, advertising, trackers, or Meldh-operated
-        inference servers. Meldh does not automatically receive your conversations,
-        Journal entries, notes, settings, or model prompts. We do not sell personal
-        information or use it for advertising.
+        Olune has no accounts, advertising, analytics, or tracking software. Meldh
+        operates no inference or purchase server for the app. Olune does not
+        automatically send Meldh your conversations, Journal entries, notes, settings,
+        or model prompts. Some features contact another service or hand selected
+        material to another app only when you choose to use them, as described below.
+        Meldh does not sell personal information or use it for advertising.
       </p>
 
       <h2>What Stays on Your Device</h2>
       <p>
-        Everything you write and save, including conversations, Journal passages,
-        notes, and settings, is stored on your device. Saved material is kept in an
-        encrypted database protected by a key held in the device operating system.
-        Inference and storage work offline after setup.
+        Conversations, Journal entries, notes, letters, thread summaries, About Me
+        text, and local report records are stored in a SQLCipher-encrypted database.
+        Its key is held in the operating system's secure storage on this device. Other
+        preferences, including appearance, model choice, notification settings, and
+        onboarding state, are stored in unencrypted files inside the app's private
+        folder. The downloaded model also stays on the device. Model inference and
+        ordinary storage work offline after setup.
       </p>
 
-      <h2>The One-Time Model Download</h2>
+      <h2>Model Download</h2>
       <p>
-        The language model that powers Olune is a large file downloaded from a
-        third-party host during setup. The host can see that a download happened and
-        ordinary network information such as the requesting IP address. The download
-        request does not include anything you have written or saved in Olune.
+        Olune downloads its language model from Hugging Face when you choose to install
+        it. Hugging Face and its infrastructure providers receive the request and
+        ordinary network information, including the requesting IP address. The request
+        does not include your conversations, Journal entries, notes, or model prompts.
+        Hugging Face handles that information under its own
+        <a href="https://huggingface.co/privacy">privacy policy</a>.
       </p>
 
       <h2>Purchases</h2>
@@ -81,25 +88,52 @@
         under its privacy policy.
       </p>
 
-      <h2>Backups You Choose to Make</h2>
+      <h2>Clipboard, Sharing, and Exports</h2>
       <p>
-        Olune can export an encrypted backup protected by a password you choose. The
-        file is created on your device and leaves it only when you choose where to save
-        or share it. Meldh does not receive the backup or its password.
+        Copy places selected text on the operating system clipboard. Share hands
+        selected material to the system share menu. Journal export creates a temporary
+        PDF on the device before opening that menu, and passage-card export does the
+        same with an image. An encrypted backup is protected by a password you choose
+        and can be saved to a folder or handed to another app. Once material leaves
+        Olune, the operating system, receiving app, storage provider, or person you
+        select handles it under their own terms. Meldh does not receive these exports
+        unless you deliberately send them to Meldh.
       </p>
 
-      <h2>Sharing and Reports You Choose</h2>
+      <h2>Notifications</h2>
       <p>
-        Share hands selected content to your device's share menu. The destination you
-        select then handles that material under its own terms. Report opens an email
-        draft addressed to support@meldh.com and may include excerpts from the question
-        and response. Nothing is sent until you send the message.
+        If you enable reflection reminders or future-letter alerts, Olune schedules
+        local notifications with the operating system. Reflection reminders contain a
+        general prompt. Future-letter alerts identify that a letter has arrived but do
+        not contain the letter text. These notifications are not sent to Meldh. Your
+        operating system controls how they are stored and displayed.
+      </p>
+
+      <h2 id="reports-you-choose-to-make">Reports You Choose to Make</h2>
+      <p>
+        Report opens a preview without saving a flag or sending anything. You can edit
+        the response, choose a reason, and add an optional note. Hide Here saves an
+        encrypted local record containing the original question and response, reason,
+        and note, then hides the response; it sends nothing. Send Report transmits only
+        the edited response, reason, optional note, displayed app version and model
+        information, random report ID, and protocol version through a Google Apps Script
+        receiver for email submission to reports@meldh.com, an alias on Meldh's Google
+        Workspace mailbox. Model information identifies the current catalog entry when
+        available, not a verified record of the version that generated the response.
+        Olune does not attach your question, conversation history, Journal, About Me
+        text, a device or user identifier, or your email address. The response or note
+        can still contain personal details; remove anything you do not want to send.
+        Google processes the transmission and associated network information, including
+        your IP address, and the emailed report is stored for human review.
       </p>
       <p>
-        If you contact Meldh, we receive the email address and information in your
-        message. We use it to respond, investigate the issue described, protect the
-        app and its users, and meet legal obligations. Meldh does not use support or
-        report content for advertising.
+        After receiver acceptance, Olune also tries to save the local record and hide
+        the response. That local record contains the original text even if you edited
+        the version sent. A local-save failure is reported separately, and Undo only
+        reverses local hiding; it cannot retract an email. Reports are not monitored for
+        emergencies. Olune does not send reports automatically or retry them in the
+        background. Meldh does not forward reports to AI services or use them for model
+        training.
       </p>
 
       <h2>Links You Open</h2>
@@ -111,14 +145,20 @@
         chose to share.
       </p>
 
-      <h2>Retention and Deletion</h2>
+      <h2>Age Eligibility</h2>
       <p>
-        Local app data remains on your device until you delete it through Olune or
-        remove the app. Meldh cannot access or remotely delete material it never
-        receives. Support and report emails are kept only as long as reasonably needed
-        to respond, investigate, maintain necessary business records, or comply with
-        law. You may request deletion of information you sent to Meldh by emailing
-        support@meldh.com. Legal obligations may require limited records to be kept.
+        Olune is for adults 18 and older and is not designed or appropriate for minors.
+        Companion chatbots may not be suitable for some minors. On an installation
+        obtained from Google Play, Olune first asks Play whether age information may be
+        shared and, when available, temporarily reads the returned age range to decide
+        whether the 18-and-older requirement is met. Olune does not retain or transmit
+        that response, request or expose Play's install identifier, or add the result to
+        app backups. Google processes the request under its own terms and privacy
+        policy. When Play does not share an age range, the local age screen checks the
+        date you enter on this device and retains only an adult declaration in the
+        operating system's secure storage. It does not retain or transmit your date of
+        birth, and the declaration is excluded from Olune's exports and backups. A
+        local declaration does not independently verify your age.
       </p>
 
       <h2>This Website</h2>
@@ -133,17 +173,36 @@
 
       <h2>Children</h2>
       <p>
-        Olune is not directed to children under 13 and should not be used by them.
-        Meldh does not knowingly collect personal information from children under 13.
-        If you believe a child has sent information to Meldh, contact us so it can be
-        addressed.
+        People under 18 may not use Olune. Meldh does not knowingly collect personal
+        information from children under 13. If you believe a child has sent information
+        to Meldh, contact support@meldh.com.
+      </p>
+
+      <h2>Retention and Deletion</h2>
+      <p>
+        Local data remains on the device until you delete individual material, use
+        Erase Everything, or remove the app. Temporary export files may remain in the
+        app's cache until Olune cleans them up on a later launch or during Erase
+        Everything. Erasing Olune cannot remove copies you already saved or sent
+        elsewhere. Meldh cannot access or remotely delete local material it never
+        receives. Meldh deletes raw reports after review, ordinarily within 30 days,
+        except when preservation is necessary for legal obligations or claims. The
+        report receiver uses short-lived metadata for duplicate and abuse checks, with
+        a 24-hour logical expiry and best-effort cleanup. Expiry does not guarantee
+        immediate physical deletion. Google's trash, backup, and other provider
+        retention can outlast deletion from Meldh's active records. Meldh may retain
+        support correspondence as reasonably needed to respond or meet legal
+        obligations. You may request deletion of information you sent to Meldh by
+        emailing support@meldh.com; include the report ID if available.
       </p>
 
       <h2>Security</h2>
       <p>
-        Olune uses encryption for its local database and password-protected backups.
-        No method of storage or transmission can be guaranteed completely secure. Keep
-        your device, operating system, backup password, and email account protected.
+        Olune uses SQLCipher encryption for its local database and password-based
+        encryption for backups. Plain preferences remain protected by the operating
+        system's app sandbox, not by SQLCipher. No method of storage or transmission can
+        be guaranteed completely secure. Protect access to your device, backup password,
+        clipboard, email account, and exported files.
       </p>
 
       <h2>Changes and Contact</h2>
